@@ -12,6 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.blizur.ui.theme.BlizurTheme
 
+import com.blizur.android.BlizurAPI;
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +25,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        BlizurAPI.init(this, "1OWFb3hWDf18rDvvlzGo5K", "f9e0bbbcd15654cc848567ef8fb306f4");
     }
 }
 
